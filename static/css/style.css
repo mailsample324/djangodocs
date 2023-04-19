@@ -1,0 +1,110 @@
+#chatbot {
+    width: 500px;
+    height: 500px;
+    
+    padding-block: 10px;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 8px;
+    margin: auto;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+#chat-messages {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: azure;
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #047ea0;
+}
+#chatbot-header {
+    /* Style the chatbot header */
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 5px;
+  margin: 5px;
+  width: 100%;
+  height: 30px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  }
+
+  #chatbot-header .close-button {
+    /* Style the close button in the header */
+    cursor: pointer;
+    color: #fff;
+    background-color:red;
+    border: none;
+    outline: none;
+    font-size: 16px;  /* Add a transition for smooth animation */
+  }
+  
+
+  #close-button .fa-times {
+    /* Style the close icon */
+    font-size: 40px;
+  }
+  
+
+#message-form {
+    display: relative;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid #ccc;
+
+}
+
+#message-form input[type="text"] {
+    /* Style the text input field */
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 0 10px;}
+
+
+#message-form button {
+    width: 100px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+
+#chat {
+    display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 400px;
+  overflow-y: scroll;
+  padding: 10px;
+}
+   
+
+
+#message-input {
+    /* Style the input area of the chatbot */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid #ccc;
+  }
+
+
+  

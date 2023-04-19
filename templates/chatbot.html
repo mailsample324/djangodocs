@@ -1,0 +1,43 @@
+{% load static %}
+
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-y7bFp48LbV7WGZhiBJZ7q3I5Mvj8b+z5h5g5Q5KjOsFVlHn9mUuVZmEf6jv4n4m+ayKjGwumzrO+iB8WYjK9XxQQ==" crossorigin="anonymous" />
+ <!-- =======================================================
+
+<form method="post">
+    {% csrf_token %}
+    <label for="user_input">Enter your message:</label><br>
+    <input type="text" id="user_input" name="user_input"><br>
+    <input type="submit" value="Submit">
+  </form>
+
+
+
+
+
+{% if response %}
+<p>{{ response }}</p>
+{% endif %}
+
+======================================================== -->
+
+{% block content %}
+    <div id="chatbot">
+        <div id="chat-messages">
+          <div class="chatbot-header" id="chatbot-header"><h4>Chatbot</h4> <button id="close" class="close-button">  <i class="fa-solid fa-xmark"></i></button></div>
+                <div id="chat">
+                  {% if response %}
+                  <p>{{ response }}</p>
+                  {% endif %}
+                </div>
+           
+        </div>
+      
+        <form id="message-form" method="post">
+            {% csrf_token %}
+            <input type="text" name="user_input" id="message-input" placeholder="Enter your message here">
+            <button id="button" type="submit">Send</button>
+        </form>
+    </div>
+    
+{% endblock %}
